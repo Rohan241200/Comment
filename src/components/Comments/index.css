@@ -1,0 +1,143 @@
+.bg-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: Roboto;
+  color: #1e293b;
+  align-self: flex-start;
+  text-align: center;
+  width: 50%;
+}
+
+.user-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  order: 1;
+}
+
+.user-desc {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Roboto;
+  color: #475569;
+}
+
+.comments-img {
+  width: 100%;
+  order: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 52px;
+  }
+
+  .user-container {
+    justify-content: space-between;
+  }
+
+  .user-input {
+    width: 40%;
+    order: 0;
+  }
+
+  .comments-img {
+    width: 40%;
+    order: 1;
+  }
+}
+
+.u-input {
+  height: 40px;
+  color: #334155;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Roboto;
+  padding-left: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.u-comment {
+  color: #334155;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Roboto;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.add-button {
+  align-self: flex-start;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #0284c7;
+  color: #ffffff;
+  font-family: Roboto;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.separate {
+  border: 1px solid #cbd2d9;
+  width: 100%;
+}
+
+.comments-count {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.comment-count {
+  background-color: #0284c7;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: none;
+  font-family: Roboto;
+}
+
+.comment-desc {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Roboto;
+  color: #475569;
+  margin-left: 5px;
+}
+
+.comments-items {
+  list-style-type: none;
+  width: 100%;
+}
